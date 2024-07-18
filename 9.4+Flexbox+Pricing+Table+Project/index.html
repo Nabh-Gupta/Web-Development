@@ -15,7 +15,60 @@
 
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
+        .pricing-container {
+        flex-direction: column;
+        height: 100%;
+        }
+
       }
+      @media(min-width:400px) {
+        .pricing-container{
+          flex-direction: row;
+        }
+      }
+      .pricing-container{
+        display: flex;
+        border: 10rem;
+        gap: 2rem;
+        align-items: center;
+        height: 100vh;
+      }
+      .pricing-plan{
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      text-align: center;
+      }
+      .plan-title{
+        font-style: italic;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 25px;
+      }
+      .plan-price{
+        font-weight: bolder;
+        font-size: xx-large;
+      }
+      .plan-features{
+        list-style: none;
+        padding: 0px;
+        margin: 0;
+        
+      }
+      .plan-button{
+        background-color: yellow;
+        border: solid orange;
+        justify-items: flex-end;
+
+      }
+      .plan-features li{
+        margin-bottom: 10px;
+        font-weight: bolder;
+      }
+
     </style>
   </head>
 
