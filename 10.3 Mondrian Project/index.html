@@ -11,7 +11,7 @@
     Gap Colour: #000
     White: #F0F1EC
     Red: #E72F24
-    Black: #232629
+    Black: 
     Blue: #004592
     Yellow: #F9D01E
 
@@ -19,11 +19,61 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    .container{
+      display: grid;
+      grid-template-columns:320px 198px 153px 50px;
+      grid-template-rows:414px 130px 155px 20px ;
+      gap: 8px;
+      height: 748px;
+      width: 748px;
+      background-color: black;
+
+    }
+    .red{
+      background-color: red;
+    }
+    .blue{
+      background-color: blue;
+    }
+    .yellow{
+      background-color: yellow;
+    }
+    .black{
+      background-color: gray;
+    }
+    .white2{
+     background-color: white;
+     grid-row: span 2;
+    }
+    .white1{
+      background-color: white;
+      grid-column: span 3;
+    }
+    .white3{
+      grid-area: 2 / 2 / 4 /4;
+      background-color: white;
+    }
+    .white4{
+      background-color: white;
+    }
+    .white5{
+      background-color: white;
+    }
   </style>
 </head>
 
 <body>
-  <!-- Write your HTML here -->
+   <div class="container">
+     <div class="red"></div>
+     <div class="white1"></div>
+     <div class="white2"></div>
+     <div class="white3"></div>
+     <div class="blue"></div>
+     <div class="white4"></div>
+     <div class="white5"></div>
+     <div class="yellow">yellow</div>
+     <div class="black">black</div>
+   </div>
 </body>
 
 </html>
