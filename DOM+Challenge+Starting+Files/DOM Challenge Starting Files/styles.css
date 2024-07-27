@@ -1,3 +1,7 @@
-.huge{
-  size: 10rem;
+
+.big{
+  font-size: larger;
+  color: gray;
+  /* font-weight: bold; */
 }
+
