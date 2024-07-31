@@ -51,8 +51,6 @@ function MakeSound(key){
             break;
      }
 }
-
-
 function ButtonAnimation(currentKey){
     var Ani= document.querySelector("."+ currentKey)
     Ani.classList.add("pressed");

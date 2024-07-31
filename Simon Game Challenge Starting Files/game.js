@@ -25,17 +25,60 @@ function playSound(name){
         audio.play();
 }
 
-function animatePress(currentColor) {
+$(".btn").click(function() {
+ 
+    var userChosenColour = $(this).attr("id");
+    userClickedPattern.push(userChosenColour);
+   
+    playSound(userChosenColour);
+   
+    animatePress(userChosenColour);
+  });
+   
+  function animatePress(currentColor){
+   
+      $('#' + currentColor).addClass("pressed");
+      setTimeout(function (){
+          $("#"+ currentColor).removeClass("pressed")
+      },100)
+  };
 
-    // 2. Use jQuery to add this pressed class to the button that gets clicked inside animatePress().
-    $("#" + currentColor).addClass("pressed");
+  document.addEventListener("keydown",(event) {
+    var somethi = 
+
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function animatePress(currentColor) {
+
+//     // 2. Use jQuery to add this pressed class to the button that gets clicked inside animatePress().
+//     $("#" + currentColor).addClass("pressed");
   
-    //3. use Google/Stackoverflow to figure out how you can use Javascript to remove the pressed class after a 100 milliseconds.
+//     //3. use Google/Stackoverflow to figure out how you can use Javascript to remove the pressed class after a 100 milliseconds.
     
-  setTimeout(function () {
-      $("#" + currentColor).removeClass("pressed");
-    }, 100);
-  }
+//   setTimeout(function () {
+//       $("#" + currentColor).removeClass("pressed");
+//     }, 100);
+//   }
 
 
 
