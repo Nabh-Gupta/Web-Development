@@ -94,6 +94,7 @@ function checkAnswer(currentLevel){
 
 
 
+
 // function animatePress(currentColor) {
 
 //     // 2. Use jQuery to add this pressed class to the button that gets clicked inside animatePress().
